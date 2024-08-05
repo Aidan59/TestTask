@@ -55,7 +55,7 @@ public class Controller {
             X = Double.valueOf(textFieldX.getText());
             Y = Double.valueOf(textFieldY.getText());
             if (X < 0 || X > pane.getWidth() - rectangle.getWidth()) return;
-            if (Y < 0 || Y > pane.getWidth() - rectangle.getHeight()) return;
+            if (Y < 0 || Y > pane.getHeight() - rectangle.getHeight()) return;
         } catch (NumberFormatException e){
             return;
         }
