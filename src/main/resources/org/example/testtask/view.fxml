@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.testtask.Controller">
+   <children>
+      <SplitPane dividerPositions="0.7" layoutX="-4.0" layoutY="-2.0" prefHeight="406.0" prefWidth="606.0">
+        <items>
+          <AnchorPane fx:id="pane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="70.0" stroke="BLACK" strokeType="INSIDE" width="140.0" x="15.0" y="15.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="50.0" layoutY="35.0" text="Координаты">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="36.0" layoutY="73.0" text="X:" />
+                  <Label layoutX="89.0" layoutY="73.0" text="Y:" />
+                  <TextField fx:id="textFieldX" layoutX="50.0" layoutY="69.0" prefHeight="24.0" prefWidth="35.0" text="15">
+                     <font>
+                        <Font size="11.0" />
+                     </font></TextField>
+                  <TextField fx:id="textFieldY" layoutX="103.0" layoutY="69.0" prefHeight="24.0" prefWidth="35.0" text="15">
+                     <font>
+                        <Font size="11.0" />
+                     </font></TextField>
+                  <Button layoutX="50.0" layoutY="110.0" mnemonicParsing="false" onAction="#buttonClicked" text="Применить" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
